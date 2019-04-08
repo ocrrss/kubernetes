@@ -1,0 +1,1 @@
+ConfigMaps provide a way to set configuration data in kubernetes. They can be directly referenced as a environment variable in the container or created as a volume in the pod and then mounted in the container. Check the /pods/config-maps folder for example/sample yamls

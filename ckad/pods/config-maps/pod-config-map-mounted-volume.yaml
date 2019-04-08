@@ -1,6 +1,7 @@
 # This will create files with names as the keys in the configMap specified. The content of the files is the value for the key
 # Note that volumes are created as a pod specification and not as a container spec.
 # After kubectl create, use this "kubectl exec pod-config-map-mounted-volume -- ls /etc/config"
+# and this kubectl exec pod-config-map-mounted-volume -- cat /etc/config/key1
 apiVersion: v1
 kind: Pod
 metadata:

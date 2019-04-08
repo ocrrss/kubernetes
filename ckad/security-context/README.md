@@ -1,0 +1,1 @@
+Security contexts help us to customize how containers interact with the underlying security mechanisms present on the operating systems of Kubernetes nodes. like specific OS user or a File Syste Group
