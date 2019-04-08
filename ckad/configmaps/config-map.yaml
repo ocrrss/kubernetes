@@ -1,3 +1,5 @@
+# Observe that config map has "data" and not a "spec"
+
 apiVersion: v1
 kind: ConfigMap
 metadata:

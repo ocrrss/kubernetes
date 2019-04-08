@@ -11,5 +11,5 @@ spec:
        - name: MY_VAR
          valueFrom:
             configMapKeyRef:
-              name: my-configmap
+              name: my-configmap # name of the configMap we want to use
               key: key1

@@ -13,4 +13,3 @@ spec:
     args: ["-g", "daemon off;" ,"-q"]
     ports:
       - containerPort: 80
-

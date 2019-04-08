@@ -1,0 +1,19 @@
+# This will create files with names as the keys in the configMap specified. The content of the files is the value for the key
+
+# After kubectl create, use this "kubectl exec pod-config-map-mounted-volume -- ls /etc/config"
+apiVersion: v1
+kind: Pod
+metadata:
+  name: pod-config-map-mounted-volume
+spec:
+  containers:
+    - name: cont1
+      image: busybox
+      command: ['sh','-c', "echo $(MY_VAR) && sleep 3600"]
+      volumeMounts:
+        - name: config-volume
+          mountPath: /etc/config
+  volumes:
+    - name: config-volume
+      configMap:
+        name: my-configmap
