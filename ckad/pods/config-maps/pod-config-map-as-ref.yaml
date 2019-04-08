@@ -1,3 +1,4 @@
+# Note that environment variables are created as a container specification and not as a pod spec.
 apiVersion: v1
 kind: Pod
 metadata: 
