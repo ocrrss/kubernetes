@@ -1,1 +1,3 @@
 Security contexts help us to customize how containers interact with the underlying security mechanisms present on the operating systems of Kubernetes nodes. like specific OS user or a File Syste Group
+
+Note: This is not a separate resource in kuberentes (There is no such thing as *kind: SecurityContext*). Security context is strictly a pod specification (securityContext is the actual attribute name)
