@@ -1,0 +1,11 @@
+# Make sure you create a sample service account using "kubectl create serviceaccount my-serviceaccount"
+apiVersion: v1
+kind: Pod
+metadata:
+  name: my-serviceaccount-pod
+spec:
+  serviceAccountName: my-serviceaccount
+  containers:
+  - name: myapp-container
+    image: busybox
+    command: ['sh', '-c', "echo Hello, Kubernetes! && sleep 3600"]
