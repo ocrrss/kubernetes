@@ -1,0 +1,1 @@
+Secrets provide a way to securely store sensitive information like passwords, tokens etc. The sensitive information should be encrypted and stored 
