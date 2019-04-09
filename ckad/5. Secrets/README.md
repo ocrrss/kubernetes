@@ -1,1 +1,1 @@
-Secrets provide a way to securely store sensitive information like passwords, tokens etc. The sensitive information should be encrypted and stored 
+Secrets provide a way to securely store sensitive information like passwords, tokens etc. The sensitive information stored in plaintext or encrypted format. The Secret contains two maps: data and stringData. The data field is used to store arbitrary data, encoded using base64. The stringData field is provided for convenience, and allows you to provide secret data as unencoded strings.
