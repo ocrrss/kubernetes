@@ -7,7 +7,9 @@ spec:
   securityContext:
     fsGroup: 2000
   volumes:
-    - name: candy-service-config
+    - name: candy-service-volume
+      configMap:
+        name: candy-service-config
   containers:
     - name: candy-service-container
       env:
@@ -15,7 +17,10 @@ spec:
           valueFrom:
             secretKeyRef:
               name: db-password
-              key: DB_PASSWORD     
+              key: DB_PASSWORD
+      volumeMounts:
+        - name: config-volume
+          mountPath: /etc/config
       image: linuxacademycontent/candy-service:1
       resources:
         requests: 
