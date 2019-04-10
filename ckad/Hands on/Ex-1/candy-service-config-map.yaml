@@ -1,0 +1,11 @@
+# The same can be achieved by "kubectl create configmap candy-service-config --from-file=<Path to file>", where the file contains 
+  # 'candy.peppermint.power'='100000000'
+  # 'candy.nougat-armor.strength'='10'
+
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: candy-service-config
+data:
+  'candy.peppermint.power': '100000000'
+  'candy.nougat-armor.strength': '10'
